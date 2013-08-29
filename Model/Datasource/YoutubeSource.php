@@ -62,7 +62,7 @@ class YoutubeSource extends DataSource
 
 		$query['fields'] = ($fields==null) ? '*' : $fields; 
 
-		$this->type ='activities';
+		$this->_type ='activities';
 
 		return $this->__request($query);
 	}
@@ -73,7 +73,7 @@ class YoutubeSource extends DataSource
 
 		$query['fields'] = ($fields==null) ? '*' : $fields; 
 
-		$this->type ='channels';
+		$this->_type ='channels';
 
 		return $this->__request($query);
 	}
@@ -84,7 +84,7 @@ class YoutubeSource extends DataSource
 
 		$query['fields'] = ($fields==null) ? '*' : $fields; 
 
-		$this->type ='guideCategories';
+		$this->_type ='guideCategories';
 
 		return $this->__request($query);
 	}
@@ -95,7 +95,7 @@ class YoutubeSource extends DataSource
 
 		$query['fields'] = ($fields==null) ? '*' : $fields; 
 
-		$this->type ='playlistItems';
+		$this->_type ='playlistItems';
 
 		return $this->__request($query);
 	}
@@ -106,7 +106,7 @@ class YoutubeSource extends DataSource
 
 		$query['fields'] = ($fields==null) ? '*' : $fields; 
 
-		$this->type ='playlists';
+		$this->_type ='playlists';
 
 		return $this->__request($query);
 	}
